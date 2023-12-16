@@ -140,9 +140,7 @@ footer p {
   .resultado {
     display: flex;
     flex-direction: column;
-    height: 200px;
-    text-align: center;
-    width: 200px;
+    margin-bottom: 30px;
   }
 
   #estado-ronda {
