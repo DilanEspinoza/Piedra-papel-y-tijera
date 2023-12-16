@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-fondo: #026842;
+  --colo-botones-primarios: #013e28;
+  --color-fondo-calculadora: #00150d;
+  --color-text: #ffffff;
+  --color-botones: #012a1a;
+  --color-botones-hover: #013e28;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--color-fondo);
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  font-family: "Blaka Hollow", "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  color: #00150d;
+}
+
+main {
+  margin-top: 38px;
+  padding: 50px;
+}
+
+.contenedor__juego {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2,
+h3 {
+  color: white;
+}
+
+.resultado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.jugador,
+.computadora {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+}
+
+.informacion {
+  display: flex;
+  gap: 10px;
+}
+
+.informacion p,
+.informacion span {
+  font-size: 20px;
+}
+
+.signo {
+  font-size: 80px;
+  color: white;
+}
+
+.contenedor__armas {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.arma {
+  height: 160px;
+  width: 160px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  font-size: 80px;
+  background-color: #012a1a;
+}
+
+.arma:hover {
+  background-color: #666666;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  padding: 20px;
+  font-size: 20px;
+}

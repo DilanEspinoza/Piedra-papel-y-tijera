@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dilan Espinoza | Juego" />
+    <meta
+      property="og:description"
+      content="Este es un juego web de piedra, papel o tijera"
+    />
+    <title>Juego de piedra, papel o tijera</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blaka+Hollow&family=Poppins:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="">Piedra, papel o tijera</h1>
+    </header>
+    <main>
+      <div class="contenedor__juego">
+        <h2>Selecciona tu arma</h2>
+        <h3 id="estado-ronda">El primero en obtener 5 puntos gana</h3>
+
+        <div class="resultado">
+          <div class="jugador">
+            <span class="signo" id="arma-1">❔</span>
+            <div class="informacion">
+              <p>Jugador: <span id="puntuacion-jugador">0</span></p>
+            </div>
+          </div>
+
+          <div class="computadora">
+            <span class="signo" id="arma-2">❔</span>
+            <div class="informacion">
+              <p>Computadora: <span id="puntuacion-computadora">0</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contenedor__armas">
+          <button class="arma piedra" id="piedra">
+            <span>✊</span>
+          </button>
+          <button class="arma" id="tijera">
+            <span>✌</span>
+          </button>
+          <button class="arma" id="papel">
+            <span>✋</span>
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Echo por Dilan Espinoza &copy;</p>
+    </footer>
+  </body>
+</html>
