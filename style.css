@@ -91,6 +91,7 @@ h3 {
 .contenedor__armas {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
   margin-top: 30px;
 }
 
@@ -115,4 +116,45 @@ footer {
 footer p {
   padding: 20px;
   font-size: 20px;
+}
+
+/* Responsive desing */
+
+@media (max-width: 800px) {
+  .signo {
+    font-size: 60px;
+  }
+  .contenedor__armas {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  .arma {
+    height: 120px;
+    width: 120px;
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .resultado {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    text-align: center;
+    width: 200px;
+  }
+
+  #estado-ronda {
+    text-align: center;
+  }
+
+  .signo {
+    font-size: 40px;
+  }
+  .contenedor__armas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
 }
