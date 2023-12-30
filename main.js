@@ -7,7 +7,6 @@ let $tituloJuego = document.getElementById("titulo-juego");
 const estadoRonda = document.getElementById("estado-ronda");
 const arma1 = document.getElementById("arma-1");
 const arma2 = document.getElementById("arma-2");
-
 const opcionArmas = ["piedra", "papel", "tijera"];
 
 document.querySelectorAll(".arma").forEach((arma) => {
@@ -16,9 +15,7 @@ document.querySelectorAll(".arma").forEach((arma) => {
 
 function juego() {
   const opcionJugador = this.id;
-
   const opcionComputadora = opcionRandomComputador();
-
   return agregarArma(opcionJugador, opcionComputadora);
 }
 
@@ -33,7 +30,6 @@ function agregarArma(opcionJugador, opcionComputadora) {
     arma1.textContent = "✌";
     arma2.textContent = opcionComputadora;
   }
-
   ganadorRonda();
 }
 
@@ -75,7 +71,6 @@ function ganadorRonda() {
     if (punComputadora == "5") {
       $puntuacionComputadora.textContent = "5";
       $tituloJuego.textContent = "El ganador de esta ronda es la computadora";
-
       setTimeout(() => {
         finJuego();
       }, 2500);
