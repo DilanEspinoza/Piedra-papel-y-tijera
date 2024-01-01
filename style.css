@@ -27,6 +27,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  margin-top: 20px;
 }
 
 h1 {
@@ -47,6 +48,18 @@ main {
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
+}
+
+#btn-estado-juego {
+  padding: 10px;
+  width: 40%;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+btn-estado-juego_desactivo {
+  display: none;
 }
 
 h2,
